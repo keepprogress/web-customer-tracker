@@ -59,7 +59,7 @@ public class CustomerController {
 								 Model theModel) {
 		
 		// get the customer from our service
-		Customer theCustomer = customerService.getCustomers(theId);
+		Customer theCustomer = customerService.getCustomer(theId);
 		
 		// set customer as a model attribute to pre-populate the form
 		theModel.addAttribute("customer", theCustomer);
