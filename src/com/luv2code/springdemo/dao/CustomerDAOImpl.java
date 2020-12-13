@@ -49,8 +49,8 @@ public class CustomerDAOImpl implements CustomerDAO {
 				currentSession.createQuery("from Customer",
 											Customer.class);
 		
-		// save the customer ... finally LOL
-		currentSession.save(theCustomer);
+		// save/update the customer ... finally LOL
+		currentSession.saveOrUpdate(theCustomer);
 		
 	}
 
